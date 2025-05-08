@@ -1,0 +1,221 @@
+@font-face {
+
+    font-family: SpyAgency;
+  
+    src: url("spyagency.ttf");
+  
+}
+
+@font-face {
+
+    font-family: SpyAgencyBoldItal;
+  
+    src: url("spyagencyboldital.ttf");
+  
+}
+
+@font-face {
+
+    font-family: Exo2;
+  
+    src: url("Exo2.otf");
+  
+}
+
+.owner-text{
+    font-family: Exo2;
+    color: black;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.owner-text h1{
+    font-family: Exo2;
+    color: black;
+    font-size: 36px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(17, 50px);
+    gap: 0px;
+    width: auto;
+    height: auto;
+    background-color: #A91717;
+}
+
+header{
+    grid-column: 3/13;
+    grid-row: 1/4;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-family: SpyAgencyBoldItal;
+    color: white;
+    padding: 20px;
+    font-size: 90px;
+}
+
+nav{
+    grid-column: 3/13;
+    grid-row: 4/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    grid-column: 1 / 3;
+    grid-row: 1 / 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    position: relative; /* You can adjust if needed */
+    /* No margin adjustments should be necessary unless it's affecting other layout elements */
+}
+
+.logobox{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    border-radius: 50%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: black;
+    border: 2px solid  #D4AF37;
+    overflow: hidden;
+
+}
+
+.logobox img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: Exo2;
+    font-size: 28px;
+    margin: 40px;
+}
+
+footer{
+    grid-column: 1/13;
+    grid-row: 17/18;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:black;
+    font-family: Exo2;
+}
+
+footer p{
+    color: white;
+    font-size: 16px;
+    margin: 10px;
+    font-family: Exo2;
+}
+
+article{
+    margin: 10px;
+    grid-column: 1/9;
+    grid-row: 6/17;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    flex-direction: column;
+}
+
+article h2{
+    font-family: SpyAgency;
+    color: black;
+    font-size: 48px;
+}
+
+article p{
+    font-family: Exo2;
+    color: black;
+    font-size: 28px;
+}
+
+aside{
+    margin: 10px 10px 10px 0px;
+    grid-column: 9/13;
+    grid-row: 6/17;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    flex-direction: column;
+}
+
+aside h2{
+    font-family: SpyAgency;
+    color: black;
+    font-size: 48px;
+}
+
+aside p{
+    font-family: Exo2;
+    color: black;
+    font-size: 28px;
+}
+
+/* OWNER BOX */
+.owner-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+    border-radius: 15px;
+    height: 450px;
+    width: auto; /* Control width of the container */
+    gap: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border: 5px solid black;
+    text-align: center;
+    background-color: white;
+  }
+  
+  /* Image Style */
+  .owner-image {
+    display: flex;
+    width: auto;           /* Maintain aspect ratio */
+    height: 450px;          /* Maintain aspect ratio */  
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border: 5px solid black;
+
+  }
+  
+  
+  .innercontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    gap: 30px;
+    flex-direction: row;
+    grid-column: 1 / 13; /* Ensure it is aligned properly in the grid */
+    grid-row: 6 / 17;     /* This makes sure it's positioned in the right area */
+}
+  
+
+
+
